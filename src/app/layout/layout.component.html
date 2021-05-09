@@ -1,0 +1,11 @@
+<div class="form-group">
+  <select [(ngModel)]="selectedSize" class="form-control">
+    <option *ngFor="let size of sizes">
+      {{size}}
+    </option>
+  </select>
+</div>
+
+<p>Size: {{selectedSize}}</p>
+
+<app-custom-input [size]="selectedSize"></app-custom-input>
